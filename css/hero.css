@@ -7,6 +7,18 @@
   height: 400px;
 }
 
+.hero h2 {
+  font-size: 20px;
+  font-weight: var(--text-weight);
+
+  text-align: center;
+  line-height: 1.5;
+
+  padding: 88px 24px;
+
+  margin: 0;
+}
+
 @media screen and (min-width: 768px) {
   .hero-img {
     background: url(../img/hero-tablet.png) no-repeat;
@@ -15,14 +27,23 @@
 
     height: 620px;
   }
+  
+  .hero h2 {
+    font-size: 32px;
+    padding: 88px 60px;
+  }
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1440px) {
   .hero-img {
     background: url(../img/hero-desktop.jpg) no-repeat;
     background-size: cover;
     background-position: center;
 
     height: 620px;
+  }
+
+  .hero h2 {
+    padding: 104px 120px;
   }
 }
