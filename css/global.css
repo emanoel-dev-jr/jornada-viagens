@@ -68,8 +68,34 @@ h1 {
   margin: 16px auto 32px;
 }
 
+.button {
+  display: inline-block;
+
+  font-size: 20px;
+  font-weight: var(--title-weight);
+
+  background-color: var(--secondary-color);
+  width: 280px;
+  height: 64px;
+  color: var(--text-secondary-color);
+  text-decoration: none;
+  line-height: 64px;
+
+  border-radius: 8px;
+}
+
 @media screen and (min-width: 768px) {
   .section-title h2 {
     font-size: 32px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .button {
+    width: 312px;
+  }
+
+  .button:hover {
+    background-color: var(--primary-color);
   }
 }
