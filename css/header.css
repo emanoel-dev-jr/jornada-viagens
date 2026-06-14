@@ -1,4 +1,4 @@
-header {
+.main-header {
   position: relative;
 
   display: flex;
@@ -89,7 +89,7 @@ nav {
 }
 
 @media screen and (min-width: 1440px) {
-  header {
+  .main-header {
     padding: 38px 120px;
   }
 
@@ -112,7 +112,7 @@ nav {
 }
 
 @media screen and (min-width: 1920px) {
-  header {
+  .main-header {
     padding: 38px 160px;
   }
 }
