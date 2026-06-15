@@ -1,0 +1,80 @@
+.payments .content {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.payments .image-galery {
+    display: grid;
+    grid-template-columns: repeat(2, 144px);
+    grid-template-rows: 254px 182px;
+    column-gap: 24px;
+    row-gap: 24px;
+
+    width: min-content;
+    height: 460px;
+    margin: 0 auto;
+}
+
+.payments .image {
+    background-size: cover;
+    background-position: center;
+}
+
+.payments .image.first {
+    background-image: url(../img/pagamento-imagem-1-mobile.png);
+}
+
+.payments .image.second {
+    background-image: url(../img/pagamento-imagem-2-mobile.png);
+}
+
+.payments .image.third {
+    background-image: url(../img/pagamento-imagem-3-mobile.png);
+}
+
+.payments .image.colspan-2 {
+    grid-column-end: span 2;
+}
+
+@media screen and (min-width: 768px) {
+    .payments .image-galery {
+        grid-template-columns: repeat(2, 312px);
+        grid-template-rows: 254px 182px;
+    }
+
+    .payments .image.first {
+        background-image: url(../img/pagamento-imagem-1-tablet.png);
+    }
+
+    .payments .image.second {
+        background-image: url(../img/pagamento-imagem-2-tablet.png);
+    }
+
+    .payments .image.third {
+        background-image: url(../img/pagamento-imagem-3-tablet.png);
+        background-position: bottom;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .payments .content {
+        flex-direction: row;
+    }
+
+    .payments .text-content {
+        width: 384px;
+    }
+
+    .payments .content-title {
+        width: 285px;
+    }
+
+    .payments .content-text {
+        width: 360px;
+    }
+
+    .payments .image-galery {
+        grid-template-columns: repeat(2, 384px);
+    }
+}
